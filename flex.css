@@ -1,0 +1,245 @@
+.nav-burger{
+    display: none;
+}
+
+*{
+    font-family: 'poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container{
+    width: 100vw;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container .header{
+    display: flex;
+    flex: 2;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4vw;
+}
+
+.header img{
+    margin-left: 6vw;
+}
+.header nav{
+    padding-top:  4vh; 
+    justify-self: end;  
+}
+    nav a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.5vw;
+        padding: 0 3.75vh;
+    }
+    nav a:hover{
+        color: #FA4A0C;
+    }
+    nav a.active{
+        color: #FA4A0C;
+    } 
+
+.container main{
+    display: flex;
+    flex-direction: column;
+    flex: 9;
+    width: 100vw;
+}
+main .baniere{
+    background: url('./images/baniere.jpeg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.baniere::after{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.baniere *{
+    z-index: 1;
+}
+
+.texte{
+    text-align: center;
+    margin-top: -4vh;
+}   
+.t-h1{
+    font-size: 4vw;
+    font-weight: 700;
+    color: #fff;
+    margin: 2vh auto 3vh;
+}
+.t-h3{
+    font-size: 2vw;
+    color: #fff;
+}
+.t-h4{
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: #fff;
+}
+.baniere .bouton{
+    display: flex;   
+}
+.playstore, .appstore{
+    height: 8vh;
+    width: 27vh;
+    background-color: #FA4A0C;
+    border: 2vh solid #FA4A0C;
+    border-radius: 5vh;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vh;
+    margin: 2vh;
+ }
+ .appstore{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.125rem solid #fff;
+ }
+ .appstore:hover{
+    background-color:  #FA4A0C;
+    border: 0.125rem solid  #FA4A0C;
+    color: #fff; 
+ }
+ .playstore:hover{
+    background-color: #FA4A0C;
+    border: 0.125rem solid #FA4A0C;
+    color: #fff;
+    transition: .3s;
+ }
+ main .section1{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center; 
+    align-items: center;
+    margin-top: -18vw;
+ }
+ .section1 .img-phones{
+   width: 40vw;
+   z-index: 1;
+    
+}
+.section1 .trait{
+    height: 1vw;
+    width: 60vw;
+    margin-bottom: 4vw;
+    
+    
+}
+.section1>h2{
+    font-size: 2.5vw;
+}
+.bloc{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.bloc .section2{
+    display: flex;
+    width: 100vw;
+}
+.bloc .section2 .telephone-texte{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.phone{
+    width: 35vw;
+}
+/* .text{
+   
+} */
+.texte-h3{
+    color: #FA4A0C;
+    font-size: 1.5vw;
+
+}
+.texte-h2{
+    font-size: 3vw;   
+}
+
+.texte-h4{
+    color: gray;
+    font-size: 1.5vw;
+}
+
+
+.bloc .section3{
+    display: flex;
+    width: 100vw;
+    margin-top: -8vw auto -10vw;
+}
+.bloc .section3 .telephone-texte{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3 .phone{
+    margin-right: -10vw;
+}
+.section3 .text{
+    padding-right: 5vw;
+}
+
+.container footer{
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+footer .pieds{
+    width: 100vw;
+    display: flex;
+    justify-content:space-between;
+    align-items: center; 
+}
+.pieds .logo{
+    margin-left: 10vw; 
+    
+}
+.pieds>ul{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.icons li{
+    padding: 2vw;
+
+}
+
+.pieds>p{
+    flex: 1;
+    font-size: 1.1vw;
+    margin-right: -28vw;
+}
+
+
+
+
+
+
